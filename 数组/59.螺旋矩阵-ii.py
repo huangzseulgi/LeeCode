@@ -18,8 +18,9 @@ class Solution:
         offset = 1
         loop, mid = n // 2, n // 2
         matrix = [[0]*n for _ in range(n)]
-
+        # 外循环
         for offset in range(1, loop + 1):
+            # 内循环
             for j in range(start_y, n-offset):
                 matrix[start_x][j] = cnt
                 cnt += 1
