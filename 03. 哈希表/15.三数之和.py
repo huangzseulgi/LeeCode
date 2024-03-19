@@ -32,7 +32,7 @@ class Solution:
                 sum = nums[i] + nums[left] + nums[right]
                 if sum == 0:
                     res.append([nums[i], nums[left], nums[right]])
-                    # 跳过重复的元素
+                    # 新增元素之后需要去重 以跳过重复的元素
                     # b的去重 只要相等且左边小于右边则一直移动
                     while left < right and nums[left] == nums[left+1]:
                         left += 1
